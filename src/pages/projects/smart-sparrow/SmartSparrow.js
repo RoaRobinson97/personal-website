@@ -131,7 +131,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-            In 2018, Poly186 emerged as a startup with a bold vision to transform the world for the better. Our journey began with a passionate idea to simplify and optimize global economic processes through the integration of diverse technologies. With a commitment to innovation and progress, we set out to revolutionize the way economic systems operate, leveraging cutting-edge tools and methodologies to empower individuals and businesses alike. Poly186's mission is to drive positive change and create a more efficient, accessible, and sustainable future for all.
+            In 2018, Poly186 emerged as a startup with a bold vision to transform the world for the better. Our journey began with a passionate idea to simplify and optimize global economic processes through the integration of diverse technologies. With a commitment to innovation and progress, we set out to revolutionize the way economic systems operate, leveraging cutting-edge tools and methodologies to empower individuals and businesses alike. Poly186&apos;s mission is to drive positive change and create a more efficient, accessible, and sustainable future for all.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -164,7 +164,7 @@ export const SmartSparrow = () => {
             <ProjectTextRow>
               <ProjectSectionHeading></ProjectSectionHeading>
               <ProjectSectionText>
-              To drive Poly186's success, I established robust technology and methodology frameworks. I implemented cutting-edge software architecture, managed team organization, and introduced agile methodologies like Scrum and Lean Startup. This approach ensured adaptability, efficiency, and impactful project prioritization, driving innovation and client satisfaction.
+              To drive Poly186&apos;s success, I established robust technology and methodology frameworks. I implemented cutting-edge software architecture, managed team organization, and introduced agile methodologies like Scrum and Lean Startup. This approach ensured adaptability, efficiency, and impactful project prioritization, driving innovation and client satisfaction.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -271,7 +271,7 @@ export const SmartSparrow = () => {
                     Transforming the World with Artificial Intelligence
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                    At Poly186, we believe in harnessing the power of artificial intelligence (AI) to create meaningful change. By implementing cutting-edge AI technologies, we're dedicated to addressing global challenges and revolutionizing various industries for the betterment of society.
+                    At Poly186, we believe in harnessing the power of artificial intelligence (AI) to create meaningful change. By implementing cutting-edge AI technologies, we&apos;re dedicated to addressing global challenges and revolutionizing various industries for the betterment of society.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>

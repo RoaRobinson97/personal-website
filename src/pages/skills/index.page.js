@@ -18,20 +18,18 @@ export function getStaticProps() {
     return {
       ...data,
       timecode,
-      slug: filePath.replace(/\.mdx?$/, ''),
+      slug: 'resume'
     };
   });
 
-  const featured = allPosts.find(post => post.featured);
 
   const posts = allPosts
-    .filter(post => post.slug !== featured.slug)
     .sort((a, b) => {
       return new Date(a.date).getTime() - new Date(b.date).getTime();
     })
     .reverse();
 
   return {
-    props: { posts, featured },
+    props: { posts },
   };
 }

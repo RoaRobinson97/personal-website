@@ -123,46 +123,7 @@ const ArticlesPost = ({
   );
 };
 
-const SkeletonPost = ({ index }) => {
-  return (
-    <article
-      aria-hidden="true"
-      className={classes(styles.post, styles.skeleton)}
-      style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
-    >
-      <div className={styles.postLink}>
-        <div className={styles.postDetails}>
-          <div aria-hidden className={styles.postDate}>
-            <Divider notchWidth="64px" notchHeight="8px" />
-            Coming soon...
-          </div>
-          <Heading
-            className={styles.skeletonBone}
-            as="h2"
-            level={4}
-            style={{ height: 24, width: '70%' }}
-          />
-          <Text
-            className={styles.skeletonBone}
-            size="s"
-            as="p"
-            style={{ height: 90, width: '100%' }}
-          />
-          <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Read more
-            </Button>
-            <Text className={styles.timecode} size="s">
-              00:00:00:00
-            </Text>
-          </div>
-        </div>
-      </div>
-    </article>
-  );
-};
-
-export const Skills = ({ posts, featured }) => {
+export const Skills = ({  featured }) => {
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;
@@ -176,21 +137,15 @@ export const Skills = ({ posts, featured }) => {
     </header>
   );
 
-  const postList = (
-    <div className={styles.list}>
-      {!isSingleColumn && postsHeader}
-      {posts.map(({ slug, ...post }, index) => (
-        <ArticlesPost key={slug} slug={slug} index={index} {...post} />
-      ))}
-      {Array(2)
-        .fill()
-        .map((skeleton, index) => (
-          <SkeletonPost key={index} />
-        ))}
-    </div>
-  );
 
-  const featuredPost = <ArticlesPost {...featured} />;
+  const featuredPost = <ArticlesPost   
+  title='Latest Resume'
+  abstract ='Review my resume for a detailed overview of my skills'
+  date ={'2024-03-11'}
+  featured ={true}
+  banner = '/static/resumesc.png'
+  timecode={12313}
+  index={0}/>;
 
   return (
     <article className={styles.articles}>
@@ -211,7 +166,7 @@ export const Skills = ({ posts, featured }) => {
                 {'Mobile Development'}
               </Heading>
               <Text size={featured ? 'l' : 's'} as="p">
-              From developing Flutter-based mobile apps to optimizing React Native applications, I possess a deep understanding of mobile technologies and best practices. Whether it's creating user-friendly interfaces or implementing complex functionalities, I'm committed to delivering exceptional mobile experiences that meet the needs of users and exceed project objectives.
+              From developing Flutter-based mobile apps to optimizing React Native applications, I possess a deep understanding of mobile technologies and best practices. Whether it&apos;s creating user-friendly interfaces or implementing complex functionalities, Im committed to delivering exceptional mobile experiences that meet the needs of users and exceed project objectives.
               </Text>
               <div className={styles.postFooter}>
           
@@ -252,7 +207,7 @@ export const Skills = ({ posts, featured }) => {
                 {'Backend Development'}
               </Heading>
               <Text size={featured ? 'l' : 's'} as="p">
-              As a backend developer, I specialize in Node.js and Django for server-side development, along with databases like PostgreSQL, MySQL, and MongoDB. I'm skilled in deploying to AWS and Azure, implementing CI/CD with GitHub Actions, and building RESTful APIs and GraphQL services for efficient communication between frontend and backend systems.              
+              As a backend developer, I specialize in Node.js and Django for server-side development, along with databases like PostgreSQL, MySQL, and MongoDB. I&apos;m skilled in deploying to AWS and Azure, implementing CI/CD with GitHub Actions, and building RESTful APIs and GraphQL services for efficient communication between frontend and backend systems.              
               </Text>
               <div className={styles.postFooter}>
           
@@ -295,7 +250,6 @@ export const Skills = ({ posts, featured }) => {
           <div className={styles.grid}>
             {postsHeader}
             {featuredPost}
-            {postList}
           </div>
         )}
       </Section>

@@ -30,7 +30,7 @@ const ProfileText = ({ visible, titleId }) => (
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Robinson, currently I live in Caracas working as Software Engineer.
       My expertise spans system design, business modeling, and full-stack development. I have a strong knack for problem-solving and a deep understanding of software architecture. 
-      Additionally, I've led development teams and successfully delivered projects to advanced stages.
+      Additionally, I&apos;ve led development teams and successfully delivered projects to advanced stages.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
     In my downtime, I like to keep active with calisthenics, strum a few chords on my guitar, dive into video games, and enjoy a game of chess. Always up for new projects or just shooting the breeze, so feel free to drop me a line.
