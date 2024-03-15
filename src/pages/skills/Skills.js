@@ -154,7 +154,7 @@ export const Skills = ({  featured }) => {
         description="A collection of technical design and development skills"
       />
       <Section className={styles.content}>
-        {!isSingleColumn && (
+        {true && (
           <div className={styles.grid}>
             
             <div className={styles.postDetails}>
