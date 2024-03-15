@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://robinsonroa.com",
   "description": "Portfolio site for Robinson Roa",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Robinson Roa <hello@hamishw.com>",
+  "repository": "https://github.com/roarobinson97/personla-website.git",
+  "author": "Robinson Roa ",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
