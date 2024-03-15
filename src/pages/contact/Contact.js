@@ -94,6 +94,7 @@ export const Contact = () => {
               autoComplete="email"
               label="Your Email"
               type="email"
+            
               maxLength={512}
               {...email}
             />
